@@ -13,9 +13,9 @@ from astrbot.api import logger
 from astrbot.api.event import AstrMessageEvent, filter
 from astrbot.api.star import Context, Star, register
 
-from .download_comic_impl import DEFAULT_PDF_PASSWORD, DownloadError, download_pdf
+from .download_comic import DEFAULT_PDF_PASSWORD, DownloadError, download_pdf
 from .plugin_utils import resolve_first_image, schedule_cleanup
-from .soutubot_search_impl import SearchError, format_summary, search_image
+from .soutubot_search import SearchError, format_summary, search_image
 
 
 def _positive_float(value: str | None, default: float) -> float:
